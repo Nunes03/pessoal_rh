@@ -1,0 +1,16 @@
+
+†
+java:S1319C"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(÷¡Ô
+L
+java:S36554"7Call "Optional#isPresent()" before accessing the value.(Â‹Q
+q
+java:S14884"\Immediately return this expression instead of assigning it to the temporary variable "pais".(Â‹Q
+|
+java:S1488D"aImmediately return this expression instead of assigning it to the temporary variable "listaPais".(Ú‹£ïûÿÿÿÿ
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ìè²š/
+e
+java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø
+D
+java:S62124"/Declare this local variable with "var" instead.(Â‹Q
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ

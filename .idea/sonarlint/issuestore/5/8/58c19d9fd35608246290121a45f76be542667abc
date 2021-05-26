@@ -1,0 +1,15 @@
+
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ì›¡–
+w
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "pais".(ŸÀÿ¡øÿÿÿÿ
+n
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ
+g
+java:S1128"KRemove this unused import 'br.com.lucasnunes.rh.repository.PaisRepository'.(¹ô²-8ùÖŽ²š/
+J
+java:S6212"/Declare this local variable with "var" instead.(ŸÀÿ¡øÿÿÿÿ
+V
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(å…·Œ
+W
+java:S1126"AReplace this if-then-else statement by a single return statement.(ø¼Ãç
