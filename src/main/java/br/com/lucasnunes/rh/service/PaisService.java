@@ -21,18 +21,11 @@ import java.util.ArrayList;
  * @see PaisRepository
  */
 @Service
-public class PaisService {
+public class PaisService{
 
+	@Autowired
     PaisRepository paisRepository;
-
-    public PaisService(PaisRepository paisRepository) {
-        this.paisRepository = paisRepository;
-    }
-
-    public PaisService() {
-
-    }
-
+    
     /***
      * <h1>Busca um pais pelo Id.</h1>
      *
@@ -90,8 +83,34 @@ public class PaisService {
             paisRepository.save(pais);
             return true;
         } catch (Exception e){
-            System.out.println(e);
+            e.printStackTrace();;
             return false;
         }
+    }
+    
+    /**
+     * <h1>Atualiza um {@link Pais}</h1>
+     * 
+     * <p>Recebe um {@link Pais} e atualiza
+     * ele pelo seu Id. Retorna true caso
+     * tudo tenhadado certo.</p>
+     * 
+     * @param pais {@link Pais} - Referente ao {@link Pais} informado
+     * 
+     * @return boolean - true caso de certo e false caso contrário
+     * 
+     * @author Lucas Nunes
+     * 
+     * @see Pais
+     */
+    public boolean atualizarPais(Integer id, Pais pais) {
+    	try {
+    		pais.setId(id);
+    		paisRepository.save(pais);
+    		return true;
+    	}catch(Exception e) {
+    		System.out.println(e.getMessage());
+    		return false;
+    	}
     }
 }

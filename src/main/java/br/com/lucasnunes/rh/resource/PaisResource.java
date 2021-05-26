@@ -11,7 +11,8 @@ import java.util.ArrayList;
 @RestController
 public class PaisResource {
 
-    private PaisService paisService = new PaisService();
+	@Autowired
+    private PaisService paisService;
 
     @GetMapping("/pais")
     public ArrayList<Pais> find(){
@@ -30,5 +31,17 @@ public class PaisResource {
             return true;
         }
         return false;
+    }
+    
+    @PutMapping("/pais/{id}")
+    public String atualizarPaisPorId(@PathVariable Integer id, @RequestBody Pais pais) {
+    	try {
+    		if(paisService.atualizarPais(id,pais)) {
+    			return "Pais atualizado com sucesso.";
+    		}
+    		return "Pais não encontrado.";
+    	} catch(Exception e) {
+    		return "Erro ao atualizar pais.";
+    	}
     }
 }
